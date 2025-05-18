@@ -1,0 +1,13 @@
+# Ignoriere alle .log-Dateien
+*.log
+
+# Ignoriere den Ordner build/
+build/
+
+# Ignoriere temporäre Dateien von macOS
+.DS_Store
+
+# CLion/JetBrains
+.idea/
+*.iml
+
