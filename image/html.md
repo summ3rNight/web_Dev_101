@@ -1,4 +1,10 @@
 # HyperText Markup Language
+
+## Is HTML Enough for a Website?
+- HTML alone can create simple pages. Modern websites also need:
+    - CSS (for style/design)
+    - JavaScript (for interactivity)
+
 ## Basic
 **creating structure content on web pages, define element like: paragraph, headings, links, images, ...**
 - moste element:
@@ -137,7 +143,7 @@ It ensures correct rendering of multilingual text and special characters.*
 *charset*
 - **What is character encoding?**
 *a methode cpomputers use to store char as data*
-- **How many bits are inside of a byte?**
+- **How many bits are inside a byte?**
 *8*
 ---
 
