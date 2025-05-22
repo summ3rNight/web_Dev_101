@@ -1,10 +1,12 @@
 # learning-webdev
+
 this project document my progress in learning html, css and javascript.
 the content I use and learn is form: https://www.freecodecamp.org/learn/full-stack-developer/
 
 ## html
+
 - [x] basic html
-- [ ] practice html
+- [x] practice html
 - [ ] build a recipe page
 - [ ] html fundamental
 - [ ] build travel agency page
