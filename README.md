@@ -7,7 +7,7 @@ the content I use and learn is form: https://www.freecodecamp.org/learn/full-sta
 
 - [x] basic html
 - [x] practice html
-- [ ] build a recipe page
+- [x] build a recipe page
 - [ ] html fundamental
 - [ ] build travel agency page
 - [ ] work with media
@@ -34,6 +34,5 @@ the content I use and learn is form: https://www.freecodecamp.org/learn/full-sta
 - [ ] build a multimedia player
 - [ ] html accessibility review
 - [ ] html accessibility quiz
+
 - ## css
-
-
