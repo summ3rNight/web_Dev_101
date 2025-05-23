@@ -202,18 +202,72 @@ _Die `<h1>` und `<p>` befinden sich gemeinsam im Container `<div>`_
 
 - `<section>` ist ein semantisches Element – es sagt dem Browser, dass es sich um einen eigenen Abschnitt handelt.
 
-*Faustregel:
-Verwende `<div>` für neutrale Gruppierungen, und `<section>`, `<article>`, `<nav>` usw. für bedeutungsvolle Strukturen.*
+_Faustregel:
+Verwende `<div>` für neutrale Gruppierungen, und `<section>`, `<article>`, `<nav>` usw. für bedeutungsvolle Strukturen._
 
 **What semantic meaning does a div element have?**
-*The div element has no semantic meaning.*
+_The div element has no semantic meaning._
 
 **Which of the following is the correct syntax for a div element?**
-*`<div>`content goes here`</div>`*
+_`<div>`content goes here`</div>`_
 
 **Which of the following HTML elements is commonly used to group content into distinct sections?**
-*section*
+_section_
 
 ---
 
 ## What Are IDs and Classes, and When Should You Use Them?
+
+**id ist ein eindeutiger Bezeichner für ein einzelnes HTML-Element.**
+
+```html
+<h1 id="title">Movie Review Page</h1>
+```
+
+In CSS greifst du mit # auf eine id zu:
+
+```css
+#title {
+  color: red;
+}
+```
+
+_wichtig:
+Eine id darf nur einmal pro Seite vorkommen._
+
+```html
+<!-- Falsch: -->
+<h1 id="main heading">...</h1>
+
+<!-- Richtig: -->
+<h1 id="main-heading">...</h1>
+```
+
+### Was ist class?
+
+**class wird verwendet, um mehrere Elemente mit denselben Eigenschaften zu versehen.**
+
+```html
+<div class="box"></div>
+<!-- Mehrere Klassen sind mit Leerzeichen trennbar -->
+<div class="box red-box"></div>
+```
+
+In CSS greifst du mit . auf eine Klasse zu:
+
+```css
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+```
+
+### Wann verwende ich id und wann class?
+
+| Merkmal         | id                                   | class                             |
+| --------------- | ------------------------------------ | --------------------------------- |
+| Einzigartigkeit | Muss einzigartig sein                | Kann mehrfach verwendet werden    |
+| CSS-Syntax      | #idname                              | .classname                        |
+| Anwendung       | Für ein bestimmtes Element           | Für mehrere gleichartige Elemente |
+| Beispiel        | Navigation, ein bestimmter Abschnitt | Boxen, Buttons, Layout-Gruppen    |
