@@ -8,7 +8,7 @@ the content I use and learn is form: https://www.freecodecamp.org/learn/full-sta
 - [x] basic html
 - [x] practice html
 - [x] build a recipe page
-- [ ] html fundamental
+- [x] html fundamental
 - [ ] build travel agency page
 - [ ] work with media
 - [ ] build a video compilation page
