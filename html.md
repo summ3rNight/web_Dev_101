@@ -379,4 +379,112 @@ _Best Practice: JavaScript in externe Dateien auslagern_
 
 **→ So bleibt dein Code übersichtlich, wartbar und wiederverwendbar.**
 
+### fazit
+
+- Verwende `<script>` für JavaScript-Code
+- Nutze externe Dateien, um HTML und JS zu trennen
+- Verwende src="...", um externe JS-Dateien einzubinden
+
 ---
+
+## Was ist SEO?
+
+**SEO (Suchmaschinenoptimierung) ist die Praxis, Webseiten so zu gestalten, dass sie in Suchmaschinen besser sichtbar und höher platziert sind.**
+
+### Was ist die meta description?
+
+**Eine meta-Beschreibung ist eine kurze Zusammenfassung des Inhalts deiner Webseite.**
+
+**Sie wird nicht auf der Seite angezeigt, sondern von Suchmaschinen verwendet.**
+
+- Beispiel:
+
+```html
+<meta
+  name="description"
+  content="Discover expert tips and techniques for gardening in small spaces, choosing the right plants, and maintaining a thriving garden."
+/>
+```
+
+### Wo erscheint die Beschreibung?
+
+**In den Suchergebnissen (Snippets) – also direkt unter dem Link zur Website bei Google & Co.**
+
+- Beispiel:
+
+```makefile
+r/FreeCodeCamp: Dies ist das offizielle Subreddit der freeCodeCamp.org-Community...
+```
+
+### Best Practices
+
+- Kurz & präzise formulieren (max. ca. 160 Zeichen)
+- Klarer Nutzen oder Inhalt der Seite vermitteln
+- Relevante Schlüsselwörter einbauen (aber kein Keyword-Spamming)
+- Ziel: Nutzer zum Klicken motivieren
+
+### Einfluss auf SEO
+
+- Die meta description verbessert nicht direkt das Ranking, aber:
+  - Sie beeinflusst die Klickrate (CTR) – und damit indirekt den Erfolg deiner Seite.
+  - Bessere CTR = mehr Besucher = besseres Ranking möglich
+
+**Which element is used to set the description for a web page?**
+_meta_
+
+**What does SEO stand for?**
+_search engine optimization_
+
+**Where does the page's description typically show up?**
+_In the search engine results page._
+
+### Fazit
+
+- Verwende das meta description-Element für klare, ansprechende Seitenbeschreibungen
+- Nicht sichtbar, aber wichtig für Suchmaschinen und Nutzer
+- Teil einer guten SEO-Strategie
+
+---
+
+## Was sind Open Graph Tags?
+
+**Open Graph Tags (OG-Tags) sind spezielle `<meta>`-Elemente im `<head>` einer HTML-Seite.**
+
+**Sie bestimmen, wie deine Webseite beim Teilen in sozialen Medien angezeigt wird (z. B. auf Facebook, LinkedIn, Twitter).**
+
+**Sie helfen, ansprechende Vorschauen mit Titel, Bild, Beschreibung usw. zu erstellen.**
+
+### Wichtige OG-Tags:
+
+| OG-Tag     | Zweck                                                            |
+| ---------- | ---------------------------------------------------------------- |
+| `og:title` | Titel, der im Beitrag auf Social Media angezeigt wird            |
+| `og:type`  | Art des Inhalts (z. B. `website`, `article`, `video`)            |
+| `og:image` | Bild-Vorschau (sollte groß & hochwertig sein, z. B. 1200×630 px) |
+| `og:url`   | URL zur Originalseite (hilft bei Tracking & Klarheit)            |
+
+```html
+<meta content="freeCodeCamp.org" property="og:title" />
+<meta property="og:type" content="website" />
+<meta
+  content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+  property="og:image"
+/>
+<meta property="og:url" content="https://www.freecodecamp.org" />
+```
+
+### Einfluss auf SEO
+
+- OG-Tags wirken sich nicht direkt auf das Google-Ranking aus, aber:
+  - Sie verbessern das Erscheinungsbild in Social-Media-Feeds.
+  - Das kann zu mehr Klicks (CTR) führen.
+  - Eine höhere CTR kann Suchmaschinen signalisieren, dass die Seite relevant und interessant ist.
+
+**What are open graph properties used for?**
+_To set how your website's content will be seen on different social media platforms._
+
+**What does the property="og:title" do in the meta element?**
+_It specifies the title of your web page content when it is shared on social media platforms._
+
+**What does the property="og:type" do in the meta element?**
+_It specifies the type of content used for your web page when it is shared on social media platforms._
