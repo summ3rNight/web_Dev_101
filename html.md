@@ -271,3 +271,112 @@ In CSS greifst du mit . auf eine Klasse zu:
 | CSS-Syntax      | #idname                              | .classname                        |
 | Anwendung       | Für ein bestimmtes Element           | Für mehrere gleichartige Elemente |
 | Beispiel        | Navigation, ein bestimmter Abschnitt | Boxen, Buttons, Layout-Gruppen    |
+
+**When should you use an id versus a class?**
+_Use an id when you need a unique identifier for a specific element, and use a class when you want to apply styles or behavior to multiple elements_
+
+**What happens if you use the same id more than once in your HTML?**
+_It can lead to unwanted results and issues when trying to apply styles or targeting an element in JavaScript._
+
+**Which of the following is NOT a correct value for the id attribute?**
+_id="main heading"_
+
+---
+
+## Was sind HTML Entities?
+
+**HTML-Entities sind Sonderzeichen-Codes, die verwendet werden, um reservierte Zeichen oder Sonderzeichen korrekt in HTML darzustellen.**
+
+**Sie werden genutzt, wenn ein Zeichen normalerweise vom Browser als HTML interpretiert wird, z. B. <, > oder &.**
+
+- Beispielproblem
+
+```html
+<p>This is an <img /> element</p>
+```
+
+_problem:
+Der Text zeigt nur: This is an element, `<img />` wird vom Browser als echtes HTML-Element interpretiert._
+
+- Lösung mit Entities
+
+```html
+<p>This is an &lt;img /&gt; element</p>
+```
+
+_`&lt;` steht für <, `&gt;` steht für >
+Ausgabe im Browser: This is an `<img />` element_
+
+### Arten von HTML Entities
+
+| Typ                       | Beispiel | Beschreibung                                       |
+| ------------------------- | -------- | -------------------------------------------------- |
+| **Named Reference**       | `&lt;`   | Name zwischen `&` und `;`, z. B. `&copy;`, `&amp;` |
+| **Decimal Reference**     | `&#60;`  | Dezimalwert des Zeichens                           |
+| **Hexadecimal Reference** | `&#x3C;` | Hexadezimalwert mit `x`, z. B. `&#xA9;` für ©      |
+
+### Häufige HTML Entities
+
+| Zeichen | Entity    | Beschreibung                |
+| ------- | --------- | --------------------------- |
+| `<`     | `&lt;`    | Kleiner-als-Zeichen         |
+| `>`     | `&gt;`    | Größer-als-Zeichen          |
+| `&`     | `&amp;`   | Und-Zeichen                 |
+| `"`     | `&quot;`  | Anführungszeichen           |
+| `'`     | `&apos;`  | Einfaches Anführungszeichen |
+| `©`     | `&copy;`  | Copyright-Zeichen           |
+| `™`     | `&trade;` | Trademark-Zeichen           |
+
+- **Verwende HTML Entities, wenn du Sonderzeichen anzeigen willst, die sonst vom Browser als HTML interpretiert würden.**
+
+- **Besonders nützlich beim Anzeigen von Code, Symbolen oder typografischen Zeichen.**
+
+**What is an HTML entity (character reference)?**
+_A set of characters used to represent a reserved character in HTML._
+
+**What are the three types of character references?**
+_Named, Decimal numeric, and Hexadecimal numeric character references._
+
+**Which of the following is the correct syntax for a named character reference?**
+_`&amp;`_
+
+---
+
+## Was ist das `<script>`-Element?
+
+**Das `<script>`-Element wird verwendet, um ausführbaren Code (meist JavaScript) in HTML-Seiten einzubinden.**
+
+**JavaScript macht Webseiten interaktiv (z. B. Spiele, Formulare, Bild-Slider).**
+
+- Beispiel: Inline-JavaScript
+
+```html
+<body>
+  <script>
+    alert("Welcome to freeCodeCamp");
+  </script>
+</body>
+
+<!--Führt beim Laden der Seite ein Pop-up (alert) aus. Der Code steht direkt innerhalb der HTML-Datei. -->
+```
+
+## Externer JavaScript-Code
+
+_Best Practice: JavaScript in externe Dateien auslagern_
+
+```html
+<script src="pfad-zur-datei.js"></script>
+<!--src steht für source (Quelle) – dort gibst du den Pfad zur .js-Datei an-->
+```
+
+## Warum externe Dateien?
+
+**Separation of Concerns (Trennung von Verantwortlichkeiten):**
+
+1. HTML = Struktur
+2. CSS = Design
+3. JavaScript = Verhalten / Interaktivität
+
+**→ So bleibt dein Code übersichtlich, wartbar und wiederverwendbar.**
+
+---
