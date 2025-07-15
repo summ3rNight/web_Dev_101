@@ -488,3 +488,34 @@ _It specifies the title of your web page content when it is shared on social med
 
 **What does the property="og:type" do in the meta element?**
 _It specifies the type of content used for your web page when it is shared on social media platforms._
+
+---
+
+## Audio and Video Elements
+ ```html
+ <audio src="CrystalizeThatInnerChild.mp3" control></audio>
+ <!-- -- The audio element with control to enable in page-->
+
+<audio
+  src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3" loop controls
+></audio>
+<!-- loop to restart audio-->
+
+<audio
+  src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3" loop controls muted
+></audio>
+<!-- muted when browser start-->
+
+<audio controls>
+  <source src="audio.ogg" type="audio/ogg" />
+  <source src="audio.wav" type="audio/wav" />
+  <source src="audio.mp3" type="audio/mpeg" />
+</audio>
+<!-- browser start with ogg type, if cant play audio then switch to wav ... -->
+
+<video
+  src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" loop controls muted
+  poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" width="620"
+></video>
+<!--poster is for show a img while video load, fix width format-->
+ ```
