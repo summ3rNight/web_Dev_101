@@ -13,14 +13,55 @@
 - moste element:
 
 ```html
+<!-- void element: does not have open and close tag(<>) -->
 <p>Hello</p>
-```
-
-- void element: does not have open and close tag(<>)
-
-```html
 <img />
 ```
+
+![pagestructure](/image/html_struct.png)
+
+- body is the visible part of a web page
+
+## What Is an HTML Boilerplate, and Why Is It Important?
+
+**A boilerplate is a ready-made HTML template, It provides the basic structure every web page needs**
+_Think of it as the foundation of a house—it saves time and ensures correct setup._
+
+- example 1: Basic HTML Boilerplate Example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Your visible content goes here -->
+  </body>
+</html>
+```
+
+1. `<!DOCTYPE html>` : Declares the HTML version (HTML5), Helps browsers render the page correctly.
+2. `<html lang="en">` : Root element of the page, the lang attribute specifies the language of the content.
+3. `<head> section` : Contains metadata and non-visible content.
+4. `<body> section` : Contains the visible content of the webpage
+
+**Why Use a Boilerplate?**
+_Ensures cross-browser compatibility.
+Follows best practices.
+Saves setup time for each new project.
+Can be customized as you gain experience._
+
+- **Where would you set the character encoding for your page?**
+  _a meta element in the head_
+- **Where would you set the language for your page?**
+  _in the opening html tag_
+- **What purpose does a boilerplate serve?**
+  _Provides a starting structure for your websites, Ensures you are not missing any essential elements,
+  Allows you to get started writing the content of your page faster._
 
 ---
 
@@ -103,49 +144,6 @@
 
 ---
 
-## What Is an HTML Boilerplate, and Why Is It Important?
-
-**A boilerplate is a ready-made HTML template, It provides the basic structure every web page needs**
-_Think of it as the foundation of a house—it saves time and ensures correct setup._
-
-- example 1: Basic HTML Boilerplate Example
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>freeCodeCamp</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <!-- Your visible content goes here -->
-  </body>
-</html>
-```
-
-1. `<!DOCTYPE html>` : Declares the HTML version (HTML5), Helps browsers render the page correctly.
-2. `<html lang="en">` : Root element of the page, the lang attribute specifies the language of the content.
-3. `<head> section` : Contains metadata and non-visible content.
-4. `<body> section` : Contains the visible content of the webpage
-
-**Why Use a Boilerplate?**
-_Ensures cross-browser compatibility.
-Follows best practices.
-Saves setup time for each new project.
-Can be customized as you gain experience._
-
-- **Where would you set the character encoding for your page?**
-  _a meta element in the head_
-- **Where would you set the language for your page?**
-  _in the opening html tag_
-- **What purpose does a boilerplate serve?**
-  _Provides a starting structure for your websites, Ensures you are not missing any essential elements,
-  Allows you to get started writing the content of your page faster._
-
----
-
 ## What Is UTF-8 Character Encoding, and Why Is It Needed?
 
 **It is a character encoding that tells computers how to store and display text,
@@ -154,10 +152,8 @@ Every letter, number, and symbol is stored as one or more bytes (1 byte = 8 bits
 - How to Use It in HTML : You include UTF-8 with a meta tag in the <head> section
 
 ```html
-<meta charset="UTF-8" />
-
-<! example !>
 <!DOCTYPE html>
+<meta charset="UTF-8" />
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
