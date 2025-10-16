@@ -1,0 +1,13 @@
+fieldset { 
+    padding: 2%;
+    border-color: gray;
+}
+
+body {
+    background-color: darkorange;
+}
+
+.section1 {
+    margin-bottom: 20px;
+    padding: 10px;
+}
