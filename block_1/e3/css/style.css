@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(128, 255, 128);
+}
+
+h1 {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.li1 {
+    list-style-type: square;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+
+}
