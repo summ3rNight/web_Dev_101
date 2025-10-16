@@ -15,3 +15,9 @@
 .d2 .p1 {
     margin: 0px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    margin: 20px;
+}

@@ -39,25 +39,56 @@
     </ol>
 
     <br>
-
-    <table class="tb1" style="width: 100%;">
-        <tr>
-            <td>Dies ist eine Tabelle</td>
-            <td>mit zwei Spalten</td>
-        </tr>
-        <table class="tb2" style="width: 50%;">
+    <section class="section1">
+        <table class="t1" style="width: 100%;">
             <tr>
-                <td>und</td>
-                <td>einer</td>
-                <td>verschachtelten</td>
+                <td class="td1">Eine Tabelle mit drei Zeilen und zwei Spalten</td>
+                <!-- alternativ verbinde 2 zellen -> <td colspan="2">Zelle überspannt 2 Spalten</td>
+    -->
             </tr>
-            <tr>
-                <td>Tabelle</td>
-                <td>in der</td>
-                <td>ersten Zelle</td>
-            </tr>
-
+            <table class="td1.1" style="width: 100%;" column span="2">
+                <tr>
+                    <td>e1.1</td>
+                    <td>e1.2</td>
+                </tr>
+                <tr>
+                    <td>e2.1</td>
+                    <td>e2.2</td>
+                </tr>
+            </table>
         </table>
-    </table>
+    </section>
+    <section class="section2">
+        <p class="p1">Beispiel einer Tabelle in HTML</p>
+        <table class="t1" column span="3">
+            <tr>
+                <td class="head">Werkstoff</td>
+                <td class="head">Eigenschaft</td>
+                <td class="head">Anwendungen</td>
+            </tr>
+            <tr>
+                <td>Kupfer<br>(Cu)</td>
+                <td>Dichte 8,9kg/dm³<br>Schmelzpunkt 1085°C</td>
+                <td>Zelle 3</td>
+            </tr>
+
+            <tr>
+                <td>Alu<br>(Al)</td>
+                <td>Zelle 2</td>
+                <td>Zelle 3</td>
+            </tr>
+            <tr>
+                <td>Silber<br>(Ag)</td>
+                <td>Zelle 2</td>
+                <td>Zelle 3</td>
+            </tr>
+            <tr>
+                <td>Gold<br>(Au)</td>
+                <td>Zelle 2</td>
+                <td>Zelle 3</td>
+            </tr>
+        </table>
+
+    </section>
 </body>
 </html>
