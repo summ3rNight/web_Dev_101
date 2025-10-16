@@ -23,4 +23,9 @@ Wie lässt sich eine Grafik in das HTML-Dokument einbetten? (Inline-Grafik!)
 - Mit dem Tag <img src="pfad/zur/grafik.jpg" alt="Beschreibung der Grafik">
 
 ## Aufgabe 3:
+
 erstelle ein webpage.
+
+## Aufgabe 4
+
+Welche Arten von Links ermöglicht HTML?
